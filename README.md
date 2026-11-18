@@ -3,9 +3,9 @@
 <p align="center">This KNN classifier (k = 5) is trained entirely by visitors. Add a point and a GitHub Action retrains it within a minute.</p>
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/model-dark.svg?v=28">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/model-light.svg?v=28">
-    <img alt="KNN decision boundary trained by visitors" src="./assets/model-dark.svg?v=28" width="560">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/model-dark.svg?v=29">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/model-light.svg?v=29">
+    <img alt="KNN decision boundary trained by visitors" src="./assets/model-dark.svg?v=29" width="560">
   </picture>
 </p>
 <p align="center"><code>Trained by 1 visitor · last update by @Ranuth-Nanvidu · accuracy 93%</code></p>
