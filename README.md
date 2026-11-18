@@ -54,36 +54,5 @@
     <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ranuth-Nanvidu&layout=compact&bg_color=0d1117&title_color=378ADD&text_color=c9d1d9&border_color=30363d" height="170">
   </picture>
 </p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://nirzak-streak-stats.vercel.app/?user=Ranuth-Nanvidu&background=0D1117&border=30363D&stroke=30363D&ring=378ADD&fire=EF9F27&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=EF9F27&sideLabels=8B949E&dates=8B949E">
-    <source media="(prefers-color-scheme: light)" srcset="https://nirzak-streak-stats.vercel.app/?user=Ranuth-Nanvidu&background=FFFFFF&border=D0D7DE&stroke=D0D7DE&ring=378ADD&fire=EF9F27&currStreakNum=1F2328&sideNums=1F2328&currStreakLabel=EF9F27&sideLabels=6E7781&dates=6E7781">
-    <img alt="GitHub streak" src="https://nirzak-streak-stats.vercel.app/?user=Ranuth-Nanvidu&background=0D1117&border=30363D&stroke=30363D&ring=378ADD&fire=EF9F27&currStreakNum=C9D1D9&sideNums=C9D1D9&currStreakLabel=EF9F27&sideLabels=8B949E&dates=8B949E" width="560">
-  </picture>
-</p>
-
-<h3 align="center">Trophies</h3>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=Ranuth-Nanvidu&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&row=1&column=6">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=Ranuth-Nanvidu&theme=flat&no-frame=true&no-bg=true&margin-w=6&row=1&column=6">
-    <img alt="GitHub trophies" src="https://github-profile-trophy.vercel.app/?username=Ranuth-Nanvidu&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&row=1&column=6">
-  </picture>
-</p>
-
-<h3 align="center">Top contributed repos</h3>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-contributor-stats.vercel.app/api?username=Ranuth-Nanvidu&limit=5&theme=github_dark&combine_all_yearly_contributions=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-contributor-stats.vercel.app/api?username=Ranuth-Nanvidu&limit=5&theme=default&combine_all_yearly_contributions=true">
-    <img alt="Top contributed repos" src="https://github-contributor-stats.vercel.app/api?username=Ranuth-Nanvidu&limit=5&theme=github_dark&combine_all_yearly_contributions=true" width="560">
-  </picture>
-</p>
-
----
-
-<p align="center"><a href="https://visitcount.itsvg.in"><img alt="Visitor count" src="https://visitcount.itsvg.in/api?id=Ranuth-Nanvidu&icon=2&color=0"></a></p>
 
 <!-- Created By Love By Ranuth Nanvidu -->
