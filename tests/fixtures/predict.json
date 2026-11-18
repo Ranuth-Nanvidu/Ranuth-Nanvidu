@@ -1,0 +1,9 @@
+{
+  "action": "opened",
+  "issue": {
+    "number": 13,
+    "title": "predict",
+    "body": "x=4, y=6",
+    "user": {"login": "octocat", "type": "User"}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "action": "opened",
+  "issue": {
+    "number": 16,
+    "title": "Typo in README",
+    "body": "x=1, y=2 but this is just a normal issue",
+    "user": {"login": "octocat", "type": "User"}
+  }
+}

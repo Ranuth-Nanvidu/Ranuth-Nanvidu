@@ -25,3 +25,17 @@
 [![](https://visitcount.itsvg.in/api?id=Ranuth-Nanvidu&icon=2&color=0)](https://visitcount.itsvg.in)
 
 <!-- Created By Love By Ranuth Nanvidu -->
+
+<!-- MODEL:START -->
+<h3 align="center">Train my model</h3>
+<p align="center">This KNN classifier (k = 5) is trained entirely by visitors. Add a point and a GitHub Action retrains it within a minute.</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/model-dark.svg?v=25">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/model-light.svg?v=25">
+    <img alt="KNN decision boundary trained by visitors" src="./assets/model-dark.svg?v=25" width="560">
+  </picture>
+</p>
+<p align="center"><code>Trained by 0 visitors · accuracy 92%</code></p>
+<p align="center"><a href="https://github.com/Ranuth-Nanvidu/Ranuth-Nanvidu/issues/new?title=train%3A%20blue&amp;body=x%3D5.0%2C%20y%3D5.0%0A%0A%3C%21--%20Change%20the%20numbers%20%280%E2%80%9310%29%20and%20press%20Submit%20--%3E">Add a blue point</a> · <a href="https://github.com/Ranuth-Nanvidu/Ranuth-Nanvidu/issues/new?title=train%3A%20orange&amp;body=x%3D5.0%2C%20y%3D5.0%0A%0A%3C%21--%20Change%20the%20numbers%20%280%E2%80%9310%29%20and%20press%20Submit%20--%3E">Add an orange point</a> · <a href="https://github.com/Ranuth-Nanvidu/Ranuth-Nanvidu/issues/new?title=predict&amp;body=x%3D5.0%2C%20y%3D5.0%0A%0A%3C%21--%20Change%20the%20numbers%20%280%E2%80%9310%29%20and%20press%20Submit%20--%3E">Ask for a prediction</a></p>
+<!-- MODEL:END -->

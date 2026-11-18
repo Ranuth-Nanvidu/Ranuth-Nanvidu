@@ -1,0 +1,9 @@
+{
+  "action": "opened",
+  "issue": {
+    "number": 14,
+    "title": "train: blue",
+    "body": "somewhere in the middle please",
+    "user": {"login": "octocat", "type": "User"}
+  }
+}

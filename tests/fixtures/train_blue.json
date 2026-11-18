@@ -1,0 +1,9 @@
+{
+  "action": "opened",
+  "issue": {
+    "number": 11,
+    "title": "train: blue",
+    "body": "x=5.1, y=4.2\n\n<!-- Change the numbers (0–10) and press Submit -->",
+    "user": {"login": "octocat", "type": "User"}
+  }
+}

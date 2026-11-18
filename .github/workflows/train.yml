@@ -1,0 +1,82 @@
+name: Train model
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch: # re-render the plot and README from data/points.csv
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: train-model
+  cancel-in-progress: false
+
+jobs:
+  train:
+    # Issue text is never used in this file. Python reads the event from
+    # $GITHUB_EVENT_PATH and only hands back values it has validated.
+    if: github.event_name == 'workflow_dispatch' || github.event.issue.user.type != 'Bot'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run model
+        id: model
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            python -m model.train --render-only
+          else
+            python -m model.train
+          fi
+
+      - name: Commit and push
+        if: steps.model.outputs.status == 'trained' || steps.model.outputs.status == 'rendered'
+        run: |
+          git add data/points.csv assets README.md
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898233+github-actions[bot]@users.noreply.github.com"
+          git commit -F out/commit.txt
+          git pull --rebase
+          git push
+
+      - name: Ensure labels exist
+        if: contains(fromJSON('["trained","predicted","rejected"]'), steps.model.outputs.status)
+        run: |
+          gh label create trained --color 378ADD --description "Visitor added a training point" 2>/dev/null || true
+          gh label create prediction --color EF9F27 --description "Visitor asked for a prediction" 2>/dev/null || true
+          gh label create rejected --color 8b949e --description "Model issue that couldn't be used" 2>/dev/null || true
+
+      - name: Reply and close
+        if: contains(fromJSON('["trained","predicted","rejected"]'), steps.model.outputs.status)
+        env:
+          ISSUE: ${{ steps.model.outputs.issue }}
+          STATUS: ${{ steps.model.outputs.status }}
+        run: |
+          gh issue comment "$ISSUE" --body-file out/comment.md
+          case "$STATUS" in
+            trained)
+              gh issue edit "$ISSUE" --add-label trained
+              gh issue close "$ISSUE" --reason completed ;;
+            predicted)
+              gh issue edit "$ISSUE" --add-label prediction
+              gh issue close "$ISSUE" --reason completed ;;
+            rejected)
+              gh issue edit "$ISSUE" --add-label rejected
+              gh issue close "$ISSUE" --reason "not planned" ;;
+          esac

@@ -1,0 +1,9 @@
+{
+  "action": "opened",
+  "issue": {
+    "number": 17,
+    "title": "train: orange",
+    "body": "x=3, y=3",
+    "user": {"login": "dependabot[bot]", "type": "Bot"}
+  }
+}
