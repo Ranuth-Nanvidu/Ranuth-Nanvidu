@@ -1,5 +1,5 @@
 <!-- MODEL:START -->
-<h3 align="center">Train my model</h3>
+<h3 align="center">Train My Model</h3>
 <p align="center">This KNN classifier (k = 5) is trained entirely by visitors. Add a point and a GitHub Action retrains it within a minute.</p>
 <p align="center">
   <picture>
